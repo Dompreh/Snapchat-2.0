@@ -1,0 +1,77 @@
+.chats{
+    position: relative;
+    width:255px ;
+    height: 400px;
+}
+.chats_takesnap{
+position: absolute;
+background-color: white;
+color: lightgray;
+border-radius: 200px;
+font-size: 40px !important;
+bottom: 0;
+left: 50%;
+transform: translate(-50%, -50%);
+cursor: pointer;
+transition: 0.3s all linear;
+}
+.chats_takesnap:hover{
+    opacity: 0.8;
+}
+
+.chats_avatar{
+    height: 25px !important;
+    width: 25px !important;
+    cursor: pointer;
+}
+.chats_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background: #059ee0;
+    height: 50px;
+}
+.chats_chatIcon{
+    color: white;
+    font-size: 18px !important;
+}
+.chats_search{
+    display: flex;
+    padding-left:8px ;
+    flex: 1;
+    align-items: center;
+}
+.chats_search > input::placeholder{
+    color: rgba(255, 255, 255, 0.849);
+    opacity: 1;
+}
+.search_icon{
+    color: white;
+    font-size: 13px !important; 
+}
+.chats_search > input{
+    outline: none;
+    background: transparent;
+    border: none;
+    font-size: 12px;
+    flex: 1;
+    color: white;
+}
+.chats_posts{
+    height: 359px;
+    box-shadow: 1px -7px 7px -6px rgba(0,0,0,0.44);
+    background: white;
+    margin-top: -9px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: scroll;
+}
+.chats_posts::-webkit-scrollbar{
+    display: none;
+}
+/* Hide scrollbar for IE,Edge and Firefox*/
+.chats_posts{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
